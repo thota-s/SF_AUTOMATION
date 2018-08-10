@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Browser Initialisation page and salesforce login page with respective to environment based on config.properties file
+
 package com.sf.qa.pages;
 
 
@@ -19,6 +24,7 @@ import com.sf.qa.util.TestUtil;
 public class LoginPage extends TestBase {
 	
 	TestUtil testutil;
+	CasePage casepage;
 	
 	//Page Factory - Object Repository
 	

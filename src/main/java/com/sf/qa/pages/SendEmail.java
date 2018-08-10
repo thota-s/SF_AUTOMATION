@@ -1,3 +1,9 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Its a send email page where included from email id, from password , receiver email id, receiver subject and receiver body using smtp server.
+// Note: This class feature file need to be run using NAPDEV network connection due to proxy issues.
+
 package com.sf.qa.pages;
 
 import javax.mail.*;
@@ -16,12 +22,18 @@ import java.util.Properties;
 public class SendEmail extends TestBase { 
 
     private static final String SMTP_HOST_NAME = "smtp.gmail.com";
-    private static final String SMTP_AUTH_USER = "armany.test1@gmail.com";
-    private static final String SMTP_AUTH_PWD  = "Tester123";
+    private static  String SMTP_AUTH_USER; //= "autuattonton81@gmail.com";
+    private static  String SMTP_AUTH_PWD;//  = "Tester@123";
     private static final  String SMTP_SERVER_PORT = "465";
    
 
-    public void SendEmailTo(String receiveremailid, String receiversubject, String receiveremailbody ) throws Exception {
+    public void SendEmailTo(String fromemailid, String fromPasswd, String receiveremailid, String receiversubject, String receiveremailbody ) throws Exception {
+    	
+    	SMTP_AUTH_USER = fromemailid;
+    	SMTP_AUTH_PWD = fromPasswd;
+    	
+    	
+    	
         Properties props = new Properties();
         props.put("mail.transport.protocol","smtp");
         props.put("mail.smtp.host",SMTP_HOST_NAME);

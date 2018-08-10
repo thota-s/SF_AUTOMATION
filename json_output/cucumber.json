@@ -3,1030 +3,153 @@
     "line": 4,
     "elements": [
       {
-        "line": 24,
-        "name": "Validate Salesforce login page",
+        "line": 15,
+        "name": "Validate Send Email To Salesoforce",
         "description": "",
-        "id": "salesforce-login;validate-salesforce-login-page;;2",
+        "id": "send-email-to-salesforce;validate-send-email-to-salesoforce;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 17516451606,
+              "duration": 135385173,
               "status": "passed"
             },
             "line": 10,
-            "name": "user opens browser",
+            "name": "user is on email box to send the email to advisor",
             "match": {
-              "location": "CreatenewCaseAssetCustSD.user_opens_browser()"
+              "location": "SendEmailSD.user_is_on_email_box_to_send_the_email_to_advisor()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 69367617,
+              "duration": 3070449878,
               "status": "passed"
             },
             "line": 11,
-            "name": "user is on login page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_is_on_login_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4356516707,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters username and password",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_enters_username_and_password()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 49642626079,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "click on new customer button",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.click_the_new_cust_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3544015991,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter the Firstname \"AUT_UAT_MRP_TESTER74\"",
+            "name": "user enter from EmailId \"autuatthree@gmail.com\" from Password \"Tester@123\" receiver EmailId \"customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com\" receiver Subject \"TON UAT 6032_3 BRONZE VIP INQUIRY\" and receiver Email Body \"TON UAT 6032 BRONZE VIP INQUIRY\"",
             "match": {
               "arguments": [
                 {
-                  "val": "AUT_UAT_MRP_TESTER74",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_FirstName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 94508099,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enter the Lastname \"A_UAT_MRP_74\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A_UAT_MRP_74",
+                  "val": "autuatthree@gmail.com",
                   "offset": 25
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_LastName(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 132495739,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enter the EmaiId \"AUTUATTONMRP74@GMAIL.COM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUTUATTONMRP74@GMAIL.COM",
-                  "offset": 23
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_EmailID(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 79110630,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter the MobileNum \"0229069999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0229069999",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_MobileNum(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 646698835,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enter the customer StoreName \"MR PORTER\" Region \"APAC\"and Country \"United Kingdom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "MR PORTER",
-                  "offset": 35
                 },
                 {
-                  "val": "APAC",
-                  "offset": 54
+                  "val": "Tester@123",
+                  "offset": 63
                 },
                 {
-                  "val": "United Kingdom",
-                  "offset": 72
+                  "val": "customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com",
+                  "offset": 93
+                },
+                {
+                  "val": "TON UAT 6032_3 BRONZE VIP INQUIRY",
+                  "offset": 222
+                },
+                {
+                  "val": "TON UAT 6032 BRONZE VIP INQUIRY",
+                  "offset": 282
                 }
               ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_StoreName(String,String,String)"
+              "location": "SendEmailSD.user_enter_from_EmailId_from_password_receiver_EmailId_receiver_Subject_and_receiver_Email_Body(String,String,String,String,String)"
             },
             "matchedColumns": [
-              4,
-              5,
-              6
+              0,
+              1,
+              2,
+              3,
+              4
             ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 98619173,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on save button to create the customer account and case",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_to_create_the_customer_account_and_case()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 21096350123,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on save button in new case page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_in_new_case_page()"
-            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@loginpage-feature"
+            "name": "@SendEmail-feature"
           }
         ]
       },
       {
-        "line": 25,
-        "name": "Validate Salesforce login page",
+        "line": 16,
+        "name": "Validate Send Email To Salesoforce",
         "description": "",
-        "id": "salesforce-login;validate-salesforce-login-page;;3",
+        "id": "send-email-to-salesforce;validate-send-email-to-salesoforce;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 14630341444,
+              "duration": 1152772,
               "status": "passed"
             },
             "line": 10,
-            "name": "user opens browser",
+            "name": "user is on email box to send the email to advisor",
             "match": {
-              "location": "CreatenewCaseAssetCustSD.user_opens_browser()"
+              "location": "SendEmailSD.user_is_on_email_box_to_send_the_email_to_advisor()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 24275763,
+              "duration": 1556320119,
               "status": "passed"
             },
             "line": 11,
-            "name": "user is on login page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_is_on_login_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6953277463,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters username and password",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_enters_username_and_password()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 36499494559,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "click on new customer button",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.click_the_new_cust_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3390804893,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter the Firstname \"AUT_UAT_NAP_TESTER75\"",
+            "name": "user enter from EmailId \"autuattonfive@gmail.com\" from Password \"Tester@123\" receiver EmailId \"customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com\" receiver Subject \"TON UAT 6032_3 GOLD VIP INQUIRY\" and receiver Email Body \"TON UAT 6032 GOLD VIP INQUIRY\"",
             "match": {
               "arguments": [
                 {
-                  "val": "AUT_UAT_NAP_TESTER75",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_FirstName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 95588110,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enter the Lastname \"A_UAT_NAP_75\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A_UAT_NAP_75",
+                  "val": "autuattonfive@gmail.com",
                   "offset": 25
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_LastName(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 136170700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enter the EmaiId \"AUTUATTONNAP74@GMAIL.COM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUTUATTONNAP74@GMAIL.COM",
-                  "offset": 23
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_EmailID(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 91237648,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter the MobileNum \"0139069999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0139069999",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_MobileNum(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 937752794,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enter the customer StoreName \"NET-A-PORTER\" Region \"INTL\"and Country \"United Kingdom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "NET-A-PORTER",
-                  "offset": 35
                 },
                 {
-                  "val": "INTL",
-                  "offset": 57
+                  "val": "Tester@123",
+                  "offset": 65
                 },
                 {
-                  "val": "United Kingdom",
-                  "offset": 75
+                  "val": "customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com",
+                  "offset": 95
+                },
+                {
+                  "val": "TON UAT 6032_3 GOLD VIP INQUIRY",
+                  "offset": 224
+                },
+                {
+                  "val": "TON UAT 6032 GOLD VIP INQUIRY",
+                  "offset": 282
                 }
               ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_StoreName(String,String,String)"
+              "location": "SendEmailSD.user_enter_from_EmailId_from_password_receiver_EmailId_receiver_Subject_and_receiver_Email_Body(String,String,String,String,String)"
             },
             "matchedColumns": [
-              4,
-              5,
-              6
+              0,
+              1,
+              2,
+              3,
+              4
             ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 104151565,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on save button to create the customer account and case",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_to_create_the_customer_account_and_case()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 20994123142,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on save button in new case page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_in_new_case_page()"
-            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@loginpage-feature"
-          }
-        ]
-      },
-      {
-        "line": 26,
-        "name": "Validate Salesforce login page",
-        "description": "",
-        "id": "salesforce-login;validate-salesforce-login-page;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 18943504427,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user opens browser",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_opens_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 32066539,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is on login page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_is_on_login_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3364573733,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters username and password",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_enters_username_and_password()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 36988187426,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "click on new customer button",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.click_the_new_cust_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3619689863,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter the Firstname \"AUT_UAT_TON_TESTER76\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUT_UAT_TON_TESTER76",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_FirstName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 92580749,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enter the Lastname \"A_UAT_TON_76\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A_UAT_TON_76",
-                  "offset": 25
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_LastName(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 150208082,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enter the EmaiId \"AUTUATTONTON76@GMAIL.COM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUTUATTONTON76@GMAIL.COM",
-                  "offset": 23
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_EmailID(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 75737471,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter the MobileNum \"0339069999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0339069999",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_MobileNum(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 683292810,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enter the customer StoreName \"THE OUTNET\" Region \"INTL\"and Country \"United Kingdom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "THE OUTNET",
-                  "offset": 35
-                },
-                {
-                  "val": "INTL",
-                  "offset": 55
-                },
-                {
-                  "val": "United Kingdom",
-                  "offset": 73
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_StoreName(String,String,String)"
-            },
-            "matchedColumns": [
-              4,
-              5,
-              6
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 104104161,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on save button to create the customer account and case",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_to_create_the_customer_account_and_case()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 21012851107,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on save button in new case page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_in_new_case_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@loginpage-feature"
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "Validate Salesforce login page",
-        "description": "",
-        "id": "salesforce-login;validate-salesforce-login-page;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 16763227867,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user opens browser",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_opens_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 38166193,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is on login page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_is_on_login_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3773871153,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters username and password",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_enters_username_and_password()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 37060913191,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "click on new customer button",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.click_the_new_cust_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3499309290,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter the Firstname \"AUT_UAT_YOOX_TESTER77\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUT_UAT_YOOX_TESTER77",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_FirstName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 87915842,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enter the Lastname \"A_UAT_YOOX_77\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A_UAT_YOOX_77",
-                  "offset": 25
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_LastName(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 141911668,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enter the EmaiId \"AUTUATTONYOOX77@GMAIL.COM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUTUATTONYOOX77@GMAIL.COM",
-                  "offset": 23
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_EmailID(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 81278949,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter the MobileNum \"0439069999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0439069999",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_MobileNum(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 686201414,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enter the customer StoreName \"YOOX\" Region \"INTL\"and Country \"Chile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "YOOX",
-                  "offset": 35
-                },
-                {
-                  "val": "INTL",
-                  "offset": 49
-                },
-                {
-                  "val": "Chile",
-                  "offset": 67
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_StoreName(String,String,String)"
-            },
-            "matchedColumns": [
-              4,
-              5,
-              6
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 90642338,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on save button to create the customer account and case",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_to_create_the_customer_account_and_case()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 20997983768,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on save button in new case page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_in_new_case_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@loginpage-feature"
-          }
-        ]
-      },
-      {
-        "line": 28,
-        "name": "Validate Salesforce login page",
-        "description": "",
-        "id": "salesforce-login;validate-salesforce-login-page;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 15978126413,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user opens browser",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_opens_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 28169175,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is on login page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_is_on_login_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3601097788,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters username and password",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_enters_username_and_password()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 37273639468,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "click on new customer button",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.click_the_new_cust_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3531762563,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter the Firstname \"AUT_UAT_DODO_TESTER78\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUT_UAT_DODO_TESTER78",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_FirstName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 91609371,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enter the Lastname \"A_UAT_DODO_78\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A_UAT_DODO_78",
-                  "offset": 25
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_LastName(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 137211998,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enter the EmaiId \"AUTUATTONDODO78@GMAIL.COM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AUTUATTONDODO78@GMAIL.COM",
-                  "offset": 23
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_EmailID(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 120303541,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter the MobileNum \"0539069999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0539069999",
-                  "offset": 26
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_MobileNum(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 561531610,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enter the customer StoreName \"DODO\" Region \"INTL\"and Country \"Germany\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DODO",
-                  "offset": 35
-                },
-                {
-                  "val": "INTL",
-                  "offset": 49
-                },
-                {
-                  "val": "Germany",
-                  "offset": 67
-                }
-              ],
-              "location": "CreatenewCaseAssetCustSD.user_enter_the_customer_StoreName(String,String,String)"
-            },
-            "matchedColumns": [
-              4,
-              5,
-              6
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 96174730,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user click on save button to create the customer account and case",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_to_create_the_customer_account_and_case()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 21061185365,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on save button in new case page",
-            "match": {
-              "location": "CreatenewCaseAssetCustSD.user_click_on_save_button_in_new_case_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@loginpage-feature"
+            "name": "@SendEmail-feature"
           }
         ]
       }
     ],
-    "name": "Salesforce Login",
+    "name": "Send Email to Salesforce",
     "description": "",
-    "id": "salesforce-login",
+    "id": "send-email-to-salesforce",
     "keyword": "Feature",
-    "uri": "C:/Automation/YNAP_WS/Salesforce-Project/src/main/java/com/sf/qa/features/01_CreateNewCaseAssetCust.feature",
+    "uri": "C:/Automation/YNAP_WS/Salesforce-Project/src/main/java/com/sf/qa/features/02_SendEmail.feature",
     "tags": [
       {
         "line": 2,
-        "name": "@loginpage-feature"
+        "name": "@SendEmail-feature"
       }
     ]
   }

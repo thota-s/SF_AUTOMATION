@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//New case detail page -- Skeleton not coded still
+
 package com.sf.qa.pages;
 
 import java.util.concurrent.TimeUnit;

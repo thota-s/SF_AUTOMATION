@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Browser Its a step defination file to test email to case test scenarios and call the respective class methods.
+
 package com.sf.qa.stepDefinations;
 
 
@@ -39,14 +44,14 @@ public class SendEmailSD extends TestBase {
 		System.out.println("The SMTP Email Servr is Initialised");
 		
 	}
+			
 	
-	
-	@Then("^user enter receiver EmailId \"([^\"]*)\" receiver Subject \"([^\"]*)\" and receiver Email Body \"([^\"]*)\"$")
-	public void user_enter_receiver_EmailId_receiver_Subject_and_receiver_Email_Body(String receiveremailid,String receiversubject,String  receiveremailbody) throws Throwable {
+	@Then("^user enter from EmailId \"([^\"]*)\" from Password \"([^\"]*)\" receiver EmailId \"([^\"]*)\" receiver Subject \"([^\"]*)\" and receiver Email Body \"([^\"]*)\"$")
+	public void user_enter_from_EmailId_from_password_receiver_EmailId_receiver_Subject_and_receiver_Email_Body(String fromemailid,String frompasswd,String receiveremailid,String receiversubject,String  receiveremailbody) throws Throwable {
 	    
 		SendEmail sendemail = new SendEmail();
 		
-		sendemail.SendEmailTo(receiveremailid, receiversubject, receiveremailbody);
+		sendemail.SendEmailTo(fromemailid, frompasswd, receiveremailid, receiversubject, receiveremailbody);
 		
 	}
 

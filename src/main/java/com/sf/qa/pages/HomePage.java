@@ -1,3 +1,9 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//NewCustomer Creation button page in console page.
+//Click the New Customer button
+
 package com.sf.qa.pages;
 
 import java.util.concurrent.TimeUnit;

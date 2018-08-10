@@ -1,73 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="431.903009">
-<testcase classname="Salesforce Login" name="Validate Salesforce login page" time="97.276761">
-<system-out><![CDATA[Given user opens browser....................................................passed
-Then user is on login page..................................................passed
-Then user enters username and password......................................passed
-Then click on new customer button...........................................passed
-Then user enter the Firstname "AUT_UAT_MRP_TESTER74"........................passed
-Then user enter the Lastname "A_UAT_MRP_74".................................passed
-Then user enter the EmaiId "AUTUATTONMRP74@GMAIL.COM".......................passed
-Then user enter the MobileNum "0229069999"..................................passed
-Then user enter the customer StoreName "MR PORTER" Region "APAC"and Country "United Kingdom".passed
-Then user click on save button to create the customer account and case......passed
-Then user click on save button in new case page.............................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="4.763308">
+<testcase classname="Send Email to Salesforce" name="Validate Send Email To Salesoforce" time="3.205835">
+<system-out><![CDATA[Given user is on email box to send the email to advisor.....................passed
+Then user enter from EmailId "autuatthree@gmail.com" from Password "Tester@123" receiver EmailId "customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com" receiver Subject "TON UAT 6032_3 BRONZE VIP INQUIRY" and receiver Email Body "TON UAT 6032 BRONZE VIP INQUIRY".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Salesforce Login" name="Validate Salesforce login page 2" time="83.857218">
-<system-out><![CDATA[Given user opens browser....................................................passed
-Then user is on login page..................................................passed
-Then user enters username and password......................................passed
-Then click on new customer button...........................................passed
-Then user enter the Firstname "AUT_UAT_NAP_TESTER75"........................passed
-Then user enter the Lastname "A_UAT_NAP_75".................................passed
-Then user enter the EmaiId "AUTUATTONNAP74@GMAIL.COM".......................passed
-Then user enter the MobileNum "0139069999"..................................passed
-Then user enter the customer StoreName "NET-A-PORTER" Region "INTL"and Country "United Kingdom".passed
-Then user click on save button to create the customer account and case......passed
-Then user click on save button in new case page.............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Salesforce Login" name="Validate Salesforce login page 3" time="85.066796">
-<system-out><![CDATA[Given user opens browser....................................................passed
-Then user is on login page..................................................passed
-Then user enters username and password......................................passed
-Then click on new customer button...........................................passed
-Then user enter the Firstname "AUT_UAT_TON_TESTER76"........................passed
-Then user enter the Lastname "A_UAT_TON_76".................................passed
-Then user enter the EmaiId "AUTUATTONTON76@GMAIL.COM".......................passed
-Then user enter the MobileNum "0339069999"..................................passed
-Then user enter the customer StoreName "THE OUTNET" Region "INTL"and Country "United Kingdom".passed
-Then user click on save button to create the customer account and case......passed
-Then user click on save button in new case page.............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Salesforce Login" name="Validate Salesforce login page 4" time="83.221422">
-<system-out><![CDATA[Given user opens browser....................................................passed
-Then user is on login page..................................................passed
-Then user enters username and password......................................passed
-Then click on new customer button...........................................passed
-Then user enter the Firstname "AUT_UAT_YOOX_TESTER77".......................passed
-Then user enter the Lastname "A_UAT_YOOX_77"................................passed
-Then user enter the EmaiId "AUTUATTONYOOX77@GMAIL.COM"......................passed
-Then user enter the MobileNum "0439069999"..................................passed
-Then user enter the customer StoreName "YOOX" Region "INTL"and Country "Chile".passed
-Then user click on save button to create the customer account and case......passed
-Then user click on save button in new case page.............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Salesforce Login" name="Validate Salesforce login page 5" time="82.480812">
-<system-out><![CDATA[Given user opens browser....................................................passed
-Then user is on login page..................................................passed
-Then user enters username and password......................................passed
-Then click on new customer button...........................................passed
-Then user enter the Firstname "AUT_UAT_DODO_TESTER78".......................passed
-Then user enter the Lastname "A_UAT_DODO_78"................................passed
-Then user enter the EmaiId "AUTUATTONDODO78@GMAIL.COM"......................passed
-Then user enter the MobileNum "0539069999"..................................passed
-Then user enter the customer StoreName "DODO" Region "INTL"and Country "Germany".passed
-Then user click on save button to create the customer account and case......passed
-Then user click on save button in new case page.............................passed
+<testcase classname="Send Email to Salesforce" name="Validate Send Email To Salesoforce 2" time="1.557473">
+<system-out><![CDATA[Given user is on email box to send the email to advisor.....................passed
+Then user enter from EmailId "autuattonfive@gmail.com" from Password "Tester@123" receiver EmailId "customercare@f-26dotr4wza195tifk7ojlevaif5igcmzdae6lmoi0iwzkdsp8b.9e-dxlhua4.cs88.case.sandbox.salesforce.com" receiver Subject "TON UAT 6032_3 GOLD VIP INQUIRY" and receiver Email Body "TON UAT 6032 GOLD VIP INQUIRY".passed
 ]]></system-out>
 </testcase>
 </testsuite>

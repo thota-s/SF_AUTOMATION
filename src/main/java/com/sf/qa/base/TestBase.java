@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Browser Initialisation page.
+
 package com.sf.qa.base;
 
 import java.io.FileInputStream;

@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//This Step Definition Page is defined to create New Customer, Asset and Case from console page.
+//Each step is very descriptive to understand the functionality.
+
 package com.sf.qa.stepDefinations;
 
 
@@ -8,13 +13,20 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import junit.framework.*;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sf.qa.base.TestBase;
+import com.sf.qa.pages.CasePage;
 import com.sf.qa.pages.HomePage;
 import com.sf.qa.pages.LoginPage;
 import com.sf.qa.pages.NewCasePage;
@@ -24,6 +36,7 @@ import com.sf.qa.util.TestUtil;
 
 public class CreatenewCaseAssetCustSD extends TestBase {
 	
+	CasePage casepage;
 	LoginPage loginpage;
 	static HomePage homepage;
 	static NewCustomerPage newcustpage;
@@ -56,9 +69,55 @@ public class CreatenewCaseAssetCustSD extends TestBase {
 		System.out.println("User Entered the correct username and password details");
 		//setHomePage1(homepage);
 		return new HomePage();
-		
+	}
+	
+	//This Code is written to handle the pop up window but giving errors. Need to look into it later
+
+	/*@Then("^user is on case console page$")
+		public void user_is_on_case_console_page() throws Throwable {
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		casepage = new CasePage();
+		String title = casepage.validateCasePageTitle();
+		System.out.println("The user is on Case Cons page:" +title);
+		Assert.assertEquals("Cases - Console", title);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		/*String parent = driver.getWindowHandle();
+
+        Set<String> pops=driver.getWindowHandles();
+        {
+        Iterator<String> it =pops.iterator();
+        while (it.hasNext()) {
+
+            String popupHandle=it.next().toString();
+            if(!popupHandle.contains(parent))
+            {
+            driver.switchTo().window(popupHandle);
+            System.out.println("Popu Up Title: "+ driver.switchTo().window(popupHandle).getTitle());
+            driver.close();
 		}
 
+		
+	@Then("^user click on new case button$")
+	public HomePage user_click_on_new_case_button() throws Throwable {
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+	   	//homepage.ClickOnNewCustButton();
+		/*if(driver.switchTo().alert() != null)
+		{
+		    Alert alert = driver.switchTo().alert();
+		    String alertText = alert.getText();
+		    System.out.println("Pop up window is closed: "+alertText);
+		    alert.dismiss(); // alert.accept();
+
+		}
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		//casepage.driver.findElement(By.xpath("//div[@class='subNav']/descendant-or-self::input[4][@value='New Case'][@class='btn']").
+		casepage = new CasePage();
+		casepage.click_on_newcase();
+		return new HomePage();
+	 	}*/
+	
 	@Then("^click on new customer button$")
 	public NewCustomerPage click_the_new_cust_button() throws Throwable {
 		//driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);

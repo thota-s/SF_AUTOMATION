@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Entering the customer details such as first name, last name etc... during new customer creation.
+
 package com.sf.qa.pages;
 
 import java.util.concurrent.TimeUnit;

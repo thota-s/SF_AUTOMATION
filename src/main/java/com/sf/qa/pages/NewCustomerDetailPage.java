@@ -1,3 +1,8 @@
+//Automaton Author Name: SUBHRA THOTA
+//Version2.0
+//Date : 10/08/2018
+//Browser Initialisation page -- Its a duplicate page to case page. Need to see how to user it or removed it later.
+
 package com.sf.qa.pages;
 
 import java.util.concurrent.TimeUnit;
